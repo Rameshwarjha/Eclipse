@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.Junitclass"/>
+    <fullyQualifiedTypeName name="com.InnerClassDemo.Inner"/>
+    <fullyQualifiedTypeName name="com.Staticnestedwithstaticmethod.Inner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.ImpPolymorphID.Validatepayment"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+</qualifiedTypeNameHistroy>

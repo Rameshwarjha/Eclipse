@@ -1,0 +1,24 @@
+package com;
+import java.io.*;
+
+
+public class Checked0rCompiletimeException {
+	
+	//checked exception means compile time exceptions
+	//this type of exception we get during compile time before running the program
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//this piece of code throws file not found exception
+		FileInputStream input1 = null;
+		try {
+			input1 = new FileInputStream("C://Users//asus//RjDocs//data.txt");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+package filehandler;
+
+public class ReadDataIStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

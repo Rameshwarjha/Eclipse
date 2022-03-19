@@ -1,0 +1,26 @@
+package com;
+
+abstract class Person {
+	void eat() {}
+
+}
+public class Anonymousclass{
+	public static void main(String args[]) {
+		
+		// Person p = new Person();   // we cannot instantiate like this 
+		
+		// so we will use it as anonymous class
+		
+		Person p = new Person() {     //we have started one another class without name
+			                          // so this is the anonymous class
+			void eat() {
+				System.out.println("Eating fruits");
+			}
+		};    //This anonymous class needs semicolon at end 
+		
+		
+		p.eat();
+		//making call
+		
+	}
+}

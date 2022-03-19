@@ -1,0 +1,22 @@
+package filehandler;
+import java.io.*;
+/***this method do not needs to change or convert from bytes 
+ * it directly does everything
+ * @author asus
+ *
+ */
+
+public class FileReaderClass {
+	
+	public static void main(String args[]) {
+		try {
+			
+		FileReader fr = new FileReader("E://new//createFileUsingCode.txt",true);
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}
