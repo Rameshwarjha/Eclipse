@@ -7,6 +7,7 @@ public class IteratorDemo {
 		// TODO Auto-generated method stub
         
 		ArrayList<String> names = new ArrayList<String>();
+		ArrayList<String> n = new ArrayList<String>();
 		names.add("Rameshwar");
 		names.add("Rj");
 		names.add("Steven");

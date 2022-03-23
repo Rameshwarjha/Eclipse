@@ -24,7 +24,9 @@ public class OutputStream {
 						/******Important******/
 			/***this method retains previous stuff and writes new stuff after that***/
 			FileOutputStream fo= new FileOutputStream("E://new//createFileUsingCode.txt",true);
+			
 		String s ="Its all about javaworld";
+		
 		byte b[] =s.getBytes();
 		fo.write(b);
 		System.out.println("success");

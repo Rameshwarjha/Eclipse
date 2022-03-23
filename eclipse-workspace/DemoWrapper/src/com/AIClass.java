@@ -14,6 +14,8 @@ public class AIClass {
 			public void getAge() {
 				System.out.println("age is ="+x);
 				
+				List<String> list =new ArrayList<String>();
+				
 			}
 			
 		};    //semicolon at end of anonymous class
