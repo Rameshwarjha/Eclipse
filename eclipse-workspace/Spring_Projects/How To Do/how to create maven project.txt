@@ -1,0 +1,23 @@
+How to create maven project:
+Go to File-> new-> Maven_Project->next->Select catalog as "Internal" -> select archtype quickstart maven project-> Give the name of GroupID and Artifact ID Click Next or Finish
+
+Install Dependency inside "Dependencies" in "pom.xml"
+
+1st dependency -> spring Core ->   <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+
+2nd dependency -> Spring Context ->  <!--https://mvnrepository.com/artifact/org.springframework/spring-context -->
+
+** on saving it will install dependencies automatically from the location copied and saved in dependencies in above step 
+
+Now create "config.xml" file and copy dependencies from previous folder demo code OR from documentation of spring from 46-47 page 
+
+Now inside <beans> create a <bean> with complete location in class for ex- class="com.demo.springcore.Hello_world_maven_Project.Student" and also give name to the bean ex- name="stu1"
+## all bean properties should be according to fields provided in the class 
+
+## we can create multiple bean in this with same process
+- Now it is instantiated inside the app.java to run it 
+   example code -        ApplicationContext context = new ClassPathXmlApplicationContext("Config.xml");
+
+                         Student st = (Student)context.getBean("stu1");
+       			 System.out.println(st);
+
