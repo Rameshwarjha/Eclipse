@@ -1,0 +1,91 @@
+           MONGO DB -  A NOSQL DATABASE (HANDLES UNSTRUCTURED, SEMI-STRUCTURED, STRUCTURED DATA | MORE FLEXIBLE THAN SQL)
+
+/* Installing Mongo db */
+  * Go to - "https://www.mongodb.com/try/download/community"
+  - click on download 
+  - install it
+
+# After installing :-
+  - go to file manager-> c:// drive-> program files -> MongoDB -> server -> 5.0(or whatever) -> bin -> "NOW COPY THIS PATH" 
+  - gO to environment variables -> click on environment vaiables(in advanced) -> in user vaiables "click on path" -> click on edit -> " paste the copied in last step at last " -> and save -> save by clicking "ok" 
+
+  - go to command prompt -> type "mongo" 
+  - and mongo db console will be open 
+
+
+commands:
+ 1 "show dbs" for displaying all databases
+ 2 "db" to display current database 
+ 3 "use product_db" -> if - database do not exist then "creates databse named "product_db" first and then "uses this database 
+                    -> if - database exist then " it switches to this database and do not creates new database 
+ 4 "db.datainfo.insertOne({name:"Rameshwar",city:"Delhi",Age:22})" creates collection(table) named "datainfo" inside "current db" and executes command "insertOne" to insert one row of data in table 
+   * if it is successful then result is like this -> {
+        "acknowledged" : true,
+        "insertedId" : ObjectId("627dde1795279651d40841ec")
+}
+ 5 "show collections" shows name of all the tables inside the "current db"
+ 6 "db.datainfo.find()" shows all data inside the collection "datainfo" using "find()" method
+ 7 "db.datainfo.find().pretty()" shows all data but always in a more "readable" manner 
+ 8  " db.datainfo.insertMany([{"name" : "Raj", "city" : "pune", "age" : 16},{"name" : "hari", "city" : "mumbai", "age" : 17},{"name" : "suresh", "city" : "Delhi", "age" : 21}]) " command for entering many entries in collection "datainfo" 
+result should be as below if executed successfully :
+" {
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("627de32795279651d40841ed"),
+                ObjectId("627de32795279651d40841ee"),
+                ObjectId("627de32795279651d40841ef")
+        ]
+} " 
+  after this to see information of all then we can use " db.datainfo.find().pretty()" it displays all data in readable format 
+
+ 9 " db.datainfo.find({name:"hari"}).pretty() " to get all the info of "hari" searching using name 
+  * if we do not want the id 
+     - " db.datainfo.find({age:17},{_id:0}).pretty() " it will display data "without displaying the id"
+     - @## SUPPOSE WE HAVE MULTIPLE ENTRIES THEN:
+     TO DISPLAY ALL ENTRIES WITH SAME RESULT 
+     "db.datainfo.find({age:17}).pretty()" -CODE TO FIND
+     RESULT - /*
+		{
+        "_id" : ObjectId("627de32795279651d40841ee"),
+        "name" : "hari",
+        "city" : "mumbai",
+        "age" : 17
+}
+{
+        "_id" : ObjectId("627de5f695279651d40841f0"),
+        "name" : "Raj1",
+        "city" : "pune",
+        "age" : 17
+}
+{
+        "_id" : ObjectId("627de5f695279651d40841f1"),
+        "name" : "hari12",
+        "city" : "mumbai",
+        "age" : 17
+}
+{
+        "_id" : ObjectId("627de5f695279651d40841f2"),
+        "name" : "suresh1",
+        "city" : "Delhi",
+        "age" : 17
+}
+*/
+     
+     @## IF WE WANT TO DISPLAY ONLY FIRST (one result from start)
+       " db.datainfo.find({age:17}).pretty().limit(1) "
+ 	result- /* 
+		{
+        "_id" : ObjectId("627de32795279651d40841ee"),
+        "name" : "hari",
+        "city" : "mumbai",
+        "age" : 17
+}
+	*/
+
+	@## IF WE WANT TO DISPLAY two results (two result from start)
+	code - " db.datainfo.find({age:17}).pretty().limit(2) " 
+	RESULT - " TWO DATASETS FROM STARTING IS DISPLAYED " 
+ 	
+10
+
+

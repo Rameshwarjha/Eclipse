@@ -1,0 +1,5 @@
+we will install lombok to facilitate our spring boot projects 
+  features of lombok -
+    - it reduces lines of codes 
+    - no need to write multiple getter and setters and other codes 
+      - reduces lines of code and facilitates the programmer to do programming
