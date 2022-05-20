@@ -13,10 +13,13 @@ public class App
     {
         System.out.println( "Hello World!" );
         
+        
+        // after giving dependencies only it will give the option to import so first 
+//        provide dependencies 
        ApplicationContext context = new ClassPathXmlApplicationContext("Config.xml");
 
        Student st = (Student)context.getBean("stu1");
-       System.out.println(st);
+       System.out.println(st); 
        
     }
     

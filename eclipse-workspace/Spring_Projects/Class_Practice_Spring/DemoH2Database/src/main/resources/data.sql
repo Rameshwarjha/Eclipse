@@ -1,0 +1,1 @@
+INSERT INTO EMLOYEE_TABLE(first_name) VALUES('rameshwar'),('suresh'),('raj');

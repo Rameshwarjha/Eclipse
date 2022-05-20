@@ -1,23 +1,108 @@
 How to create maven project:
 Go to File-> new-> Maven_Project->next->Select catalog as "Internal" -> select archtype quickstart maven project-> Give the name of GroupID and Artifact ID Click Next or Finish
 
+____
 Install Dependency inside "Dependencies" in "pom.xml"
-
+____
 1st dependency -> spring Core ->   <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-
+____
 2nd dependency -> Spring Context ->  <!--https://mvnrepository.com/artifact/org.springframework/spring-context -->
-
+____
 ** on saving it will install dependencies automatically from the location copied and saved in dependencies in above step 
-
+____
 Now create "config.xml" file and copy dependencies from previous folder demo code OR from documentation of spring from 46-47 page 
-
+____
 Now inside <beans> create a <bean> with complete location in class for ex- class="com.demo.springcore.Hello_world_maven_Project.Student" and also give name to the bean ex- name="stu1"
 ## all bean properties should be according to fields provided in the class 
-
+____
 ## we can create multiple bean in this with same process
 - Now it is instantiated inside the app.java to run it 
    example code -        ApplicationContext context = new ClassPathXmlApplicationContext("Config.xml");
 
                          Student st = (Student)context.getBean("stu1");
        			 System.out.println(st);
+_________________________________________________________________________________________
+
+***After each update in code in maven project 
+   - right click on "project"
+   - click on "maven" option
+   - click on option "update project" 
+   _ click on "force update of snapshots/releases"
+
+    before doing next process ensure that version is specified in xml file properly for java else it will not work " like done in this project" 
+*** clening project - always do update after the editing any code 
+     and before every clean update project 
+     - click on "project title"
+     -click on " run as" 
+     -select option "maven build"
+     - In window that appears Inside goals write - " clean compile " 
+     - click on apply 
+     - now click on run 
+     
+    -- this above task is to be done again and again
+    * (if error occurs in running after doing the above task "rename" the config file and "also do same in app.java"
+
+
+# creating web app mvc
+  * create new maven app 
+   -select archtype as "maven-achetype-webapp" 
+   - and create the project 
+
+
+# Installing tomcat server 
+  link - https://tomcat.apache.org/download-90.cgi#9.0.62
+
+Install the tomcat server from above link 
+Now add server tomcat server v9.0 (or whatever) from option by selecting installed location  (if not getting option then go to windows then go to view then go to server)
+
+Now change server port number - admin port number to any like-8001 (will get option on clicking on tomcat server)
+                              - also change Http/1.1 to any like - 8009 (or anything)
+
+// creating webapp first time- how to resolve default error 
+   - click on project 
+   - click on Build path
+   - click on Configure Build path 
+   - click on libraries
+   - click on add libraries
+   - click on server runtime 4
+   - select apache Tomcat v9.0
+   - click on next and finish
+// add spring web mvc xml link 
+    - <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.3.14</version>
+</dependency>
+
+____________**_________**__________**___________**___________**___________**________**________
+           MONGO DB -  A NOSQL DATABASE (HANDLES UNSTRUCTURED, SEMI-STRUCTURED, STRUCTURED DATA | MORE FLEXIBLE THAN SQL)
+
+/* Installing Mongo db */
+  * Go to - "https://www.mongodb.com/try/download/community"
+  - click on download 
+  - install it
+
+# After installing :-
+  - go to file manager-> c:// drive-> program files -> MongoDB -> server -> 5.0(or whatever) -> bin -> "NOW COPY THIS PATH" 
+  - gO to environment variables -> click on environment vaiables(in advanced) -> in user vaiables "click on path" -> click on edit -> " paste the copied in last step at last " -> and save -> save by clicking "ok" 
+
+  - go to command prompt -> type "mongo" 
+  - and mongo db console will be open 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

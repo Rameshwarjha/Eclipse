@@ -1,0 +1,46 @@
+# creating web app mvc
+  * create new maven app 
+   -select archtype as "maven-achetype-webapp" 
+   - and create the project 
+
+
+# Installing tomcat server 
+  link - https://tomcat.apache.org/download-90.cgi#9.0.62
+
+Install the tomcat server from above link 
+Now add server tomcat server v9.0 (or whatever) from option by selecting installed location  (if not getting option then go to windows then go to view then go to server)
+
+Now change server port number - admin port number to any like-8001 (will get option on clicking on tomcat server)
+                              - also change Http/1.1 to any like - 8009 (or anything)
+
+// creating webapp first time- how to resolve default error 
+   - click on project 
+   - click on Build path
+   - click on Configure Build path 
+   - click on libraries
+   - click on add libraries
+   - click on server runtime 
+   - select apache Tomcat v9.0
+   - click on next and finish
+   
+   <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.3.14</version>
+</dependency>
+
+
+# steps to create project 
+  1 configure the dispatcher servlet in web.xml
+  
+  2 
+  
+  3 
+  
+  4 
+  
+  5 
+  
+   
+
