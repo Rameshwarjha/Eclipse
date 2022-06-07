@@ -1,0 +1,53 @@
+<mat-card class="example-card">
+  <mat-card-header class="header">
+    <mat-card-title>{{ playerDetails?.name }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image class="image" [src]="playerDetails?.playerImg" />
+
+  <table class="player">
+    <tr>
+      <th>Name</th>
+      <td colspan="2">{{ playerDetails?.name }}</td>
+    </tr>
+
+    <tr>
+      <th>Born</th>
+      <td colspan="2">{{ playerDetails?.dateOfBirth }}</td>
+    </tr>
+
+    <tr>
+      <th>Role</th>
+      <td colspan="2">{{ playerDetails?.role }}</td>
+    </tr>
+
+    <tr>
+      <th>Batting Style</th>
+      <td colspan="2">{{ playerDetails?.battingStyle }}</td>
+    </tr>
+
+    <tr>
+      <th>Bowling Style</th>
+      <td colspan="2">{{ playerDetails?.bowlingStyle }}</td>
+    </tr>
+
+    <tr>
+      <th>Plays for</th>
+      <td colspan="2" itemprop="nationality">{{ playerDetails?.country }}</td>
+    </tr>
+
+    <!-- <tr>
+      <th>Age</th>
+      <td colspan="2">{{ playerDetails?.currentAge }}</td>
+    </tr> -->
+
+    <!-- <tr>
+      <td colspan="2">
+        {{ playerDetails?.profile }}
+      </td>
+    </tr> -->
+  </table>
+
+  <div mat-dialog-actions>
+    <button class="close1" mat-button (click)="onNoClick()">Close</button>
+  </div>
+</mat-card>
