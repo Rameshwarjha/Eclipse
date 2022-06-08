@@ -8,7 +8,8 @@ import { CplayerModule } from './cplayer/cplayer.module';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule} from '@angular/platform-browser';
+import {MatButtonModule} from '@angular/material/button';
+// import { BrowserAnimationsModule} from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser';
     FormsModule,
     MatToolbarModule,
     MatIconModule,
-    BrowserAnimationsModule
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
