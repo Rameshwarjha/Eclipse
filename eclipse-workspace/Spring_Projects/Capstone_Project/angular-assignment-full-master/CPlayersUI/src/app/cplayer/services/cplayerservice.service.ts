@@ -23,7 +23,7 @@ export class CplayerserviceService {
   constructor(private httpClient: HttpClient,  private router: Router) {
     this.cplayerApi = 'https://api.cricapi.com/v1/players?';
     // this.cplayerApi = 'https://api.cricapi.com/v1/players_info?'; key 116dd82b-4e3a-4f3e-aa7b-3164132f9bfe
-    this.apiKey = 'apikey=116dd82b-4e3a-4f3e-aa7b-3164132f9bfe';
+    this.apiKey = 'apikey=905cf6b7-e908-44d5-b03f-c995cb3dd88a';
     this.loginEndPoint= 'http://localhost:7071/api/v1/userservice/login';
     this.registerEndPoint= 'http://localhost:7071/api/v1/userservice/register'; 
     this.favouritEndPoint= 'http://localhost:7072/api/v1/favoriteservice';
