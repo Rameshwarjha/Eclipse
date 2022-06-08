@@ -6,4 +6,7 @@
 .image{
     height: 11vh;
     margin-right: auto;
+    border-radius: 30%;
+    margin-left: 20px;
+
 }
