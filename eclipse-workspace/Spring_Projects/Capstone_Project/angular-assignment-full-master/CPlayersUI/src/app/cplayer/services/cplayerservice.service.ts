@@ -45,7 +45,7 @@ export class CplayerserviceService {
 
    getAllPlayerList(): Observable<any> {
     this.cplayerApi = 'https://api.cricapi.com/v1/players';
-    this.apiKey = '?apikey=116dd82b-4e3a-4f3e-aa7b-3164132f9bfe&offset=0';
+    this.apiKey = '?apikey=905cf6b7-e908-44d5-b03f-c995cb3dd88a&offset=0';
     
     const url = `${this.cplayerApi}${this.apiKey}`;
 
@@ -56,7 +56,7 @@ export class CplayerserviceService {
     // console.log(id);
     
     this.cplayerApi = 'https://api.cricapi.com/v1/players_info';
-    this.apiKey = '?apikey=116dd82b-4e3a-4f3e-aa7b-3164132f9bfe&offset=0&pid=' + pid;
+    this.apiKey = '?apikey=905cf6b7-e908-44d5-b03f-c995cb3dd88a&offset=0&pid=' + pid;
     const url = `${this.cplayerApi}${this.apiKey}`;
     
     return this.httpClient.get(url);
@@ -65,7 +65,7 @@ export class CplayerserviceService {
 
   getPlayerList(name: String): Observable<any> {
     this.cplayerApi = 'https://api.cricapi.com/v1/players';
-    this.apiKey = '?apikey=116dd82b-4e3a-4f3e-aa7b-3164132f9bfe&name=' + name;
+    this.apiKey = '?apikey=905cf6b7-e908-44d5-b03f-c995cb3dd88a&name=' + name;
     const url = `${this.cplayerApi}${this.apiKey}`;
     return this.httpClient.get(url);
 
