@@ -7,4 +7,21 @@
     text-align: center;
     background-color:burlywood;
     margin-top: 10vh;
+    font-weight: bold;
+    align-items: center;
+}
+.addbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: vh;
+}
+.detailbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+.mat-card-header{
+    margin-bottom: 2vh;
 }

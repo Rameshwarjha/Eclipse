@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Cplayer } from '../cplayer';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { PlayerdetailsComponent } from '../playerdetails/playerdetails.component';
 
 @Component({

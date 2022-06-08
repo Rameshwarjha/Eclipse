@@ -2,8 +2,12 @@
     display: flex;
     height: 12vh;
     padding-top :1.5vh;
+    color:rgb(210, 224, 236);
+    font-weight:bold;
 }
 .image{
     height: 11vh;
     margin-right: auto;
+    border-radius: 30%;
+    margin-left: 20px;
 }

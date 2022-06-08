@@ -34,4 +34,5 @@ export class PlayerlistComponent implements OnInit {
   addToFavorite(cplayer: Cplayer) {
     this.addToFavoriteList.emit(cplayer);
   }
+  
 }

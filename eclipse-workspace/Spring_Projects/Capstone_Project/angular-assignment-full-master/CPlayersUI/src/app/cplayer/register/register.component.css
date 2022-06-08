@@ -1,5 +1,28 @@
-:host {
+.my-form {
+    /* margin-left: 40vh; */
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items:center; */
+
+  }
+  .register-card {
+      margin-top: 5vh;
+      margin-left: 40vh;
+      margin-right: 40vh;
+
+
+  }
+  .mat-card-actions {
+      /* margin-left: 45%;*/
+       display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .mat-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bolder;
+
   }

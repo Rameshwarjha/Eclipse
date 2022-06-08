@@ -1,5 +1,6 @@
 mat-card{
     display: flex;
+    /* margin-top: 5vh; */
     flex-direction:  column;
     height: 50vh;
     width: 40vw;
@@ -17,7 +18,7 @@ mat-card-title{
     padding-top: 3vh;
 
 }
-login-form{
+.login-form{
     display: flex;
     flex-direction:  column;
     width: 20vw;

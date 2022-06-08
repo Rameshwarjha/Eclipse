@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { PlayerDetails } from '../PlayerDetails';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Cplayer } from '../cplayer';
 import { ActivatedRoute } from '@angular/router';
 import { CplayerserviceService } from '../services/cplayerservice.service';
